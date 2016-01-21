@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>RBF | Home</title>
-	<meta name="description" content="RBF">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -11,8 +11,10 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
 </head>
+
 <body>
 
 	<!-- navbar -->
@@ -24,14 +26,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="" class="navbar-brand">Welcome</a>
+				<a href="" class="navbar-brand"><img id="banner-img" src="assets/images/rbf-banner.jpg"></a>
 			</div> <!-- end navbar header-->
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact-us">Contact Us</a></li>
-					<li><a href="#events">Events</a></li>
-					<li><a href="#feedback">Feedback</a></li>
+			<div class=" collapse navbar-collapse" id="navbar-collapse">
+				<ul class="pull-center nav navbar-nav">
+					<li class="active" id="home-button"><a href="#home">Home</a>
+					<li id="about-button"><a href="#about">About</a></li>
+					<li id="contact-us-button"><a href="#contact-us">Contact Us</a>
+					<li id="events-button"><a href="#events">Events</a>
+					<li id="feedback-button"><a href="#feedback">Feedback</a>
 				</ul>
 			</div>
 		</div> <!-- end container-->
@@ -40,11 +43,86 @@
 	<!-- jumbotron-->
 	<div class="jumbotron">
 		<div class="container text-center">
-			<h1>Red Bay Freewill Baptist Church</h1>
-			<div class="btn-group">
+			<h1 id="welcome-message	">Red Bay Freewill Baptist Church</h1>
+		</div> <!-- end jumbotron-->
+	</div> <!-- end container-->
+
+	<div class="container">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  		<!-- Indicators -->
+  			<ol class="carousel-indicators">
+    			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  			</ol>
+ 
+  			<!-- Wrapper for slides -->
+  			<div class="carousel-inner">
+    			<div class="item active">
+      				<img src="http://placehold.it/1200x315" alt="...">
+      				<div class="carousel-caption">
+          				<h3>Caption Text</h3>
+      				</div>
+    			</div>
+	    		<div class="item">
+	      			<img src="http://placehold.it/1200x315" alt="...">
+	      			<div class="carousel-caption">
+	         			<h3>Caption Text</h3>
+	      			</div>
+	    		</div>
+	    		<div class="item">
+	      			<img src="http://placehold.it/1200x315" alt="...">
+	      			<div class="carousel-caption">
+	          			<h3>Caption Text</h3>
+	      			</div>
+	    		</div>
+  			</div>
+ 
+  			<!-- Controls -->
+  			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left"></span>
+  			</a>
+  			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    			<span class="glyphicon glyphicon-chevron-right"></span>
+  			</a>
+		</div> <!-- Carousel -->
+	</div>
+
+	<div class="container">
+		<section>
+			<div class="page-header" id="events">
+				<h2>Events | <small>Here are the upcoming events</small></h2>
 			</div>
-		</div> <!-- end container-->
-	</div> <!-- end jumbotron-->
+
+			<div class="row">
+				<div class="col-lg-4">
+					<blockquote>
+						<h3>Event #1</h3>
+							<p>Description of this event</p>
+					</blockquote>
+				</div>
+				<div class="col-lg-4">
+					<blockquote>
+						<h3>Event #2</h3>
+							<p>Description of this event</p>
+					</blockquote>
+				</div>
+				<div class="col-lg-4">
+					<blockquote>
+						<h3>Event #3</h3>
+							<p>Description of this event</p>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="navbar navbar-default navbar-static-bottom">
+		<div class="container">
+			<p class="navbar-text pull-left">Red Bay Freewill</p>
+			<a href="https://www.facebook.com/redbay.freewill?fref=ts" class="navbar-btn btn-primary btn pull-right">Find us on Facebook</a>
+		</div>
+	</div>
 
 	<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
 

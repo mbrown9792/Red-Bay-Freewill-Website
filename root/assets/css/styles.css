@@ -1,0 +1,28 @@
+body {
+	padding-top: 40px;
+}
+
+.jumbotron {
+    position: relative;
+    background-image: url("../images/clouds.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#welcome-message {
+	font-family: cursive;
+}
+
+#banner-img {
+	height: 40px;
+	width: 100p;
+	vertical-align: middle
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 5px 10px;
+}
+
+
